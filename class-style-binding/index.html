@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div class="row mt-5">
+        <div class="col-4 offset-4 p-2 card" id="app">
+          <button class="btn btn-sm btn-primary mb-2" @click="showBorder = !showBorder">Change Border</button>
+          <button class="btn btn-sm btn-primary mb-2" @click="changeBGColor">Change BG</button>
+          <input class="mb-2" type="text" v-model="bgColor" placeholder="color" />
+          <div class="box red align-self-center" :class="boxClasses" :style="{backgroundColor : bgColor}"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

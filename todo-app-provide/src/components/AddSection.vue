@@ -1,0 +1,18 @@
+<template>
+    <input class="form-control mb-2" type="text" id="todoText" placeholder="todo name" v-model="todo.text" @keydown.enter="addTodo(todo)">
+</template>
+
+<script>
+
+export default {
+    inject: ['addTodo'],
+    data() {
+        return {
+            todo: {
+                text: null,
+            }
+        }
+    },
+}
+
+</script>
