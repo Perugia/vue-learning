@@ -1,0 +1,16 @@
+{
+    "explorer.autoRevealExclude": {
+        "**/node_modules": false
+    },
+    "l13Diff.exclude": [
+        "**/.DS_Store",
+        "**/.git",
+        "**/.hg",
+        "**/.svn",
+        "**/CVS"
+    ],
+    "namespaceResolver.exclude": "**/node_modules/**",
+    "search.exclude": {
+        "**/node_modules": false
+    }
+}
